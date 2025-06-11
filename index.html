@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GoogleMogago</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="googlemogago-logo" aria-label="GoogleMoGago">
+      <span style="color:#4285F4;">G</span>
+      <span style="color:#EA4335;">o</span>
+      <span style="color:#FBBC05;">o</span>
+      <span style="color:#4285F4;">g</span>
+      <span style="color:#34A853;">l</span>
+      <span style="color:#EA4335;">e</span>
+      <span style="color:#EA4335; font-weight: bold;">M</span>
+      <span style="color:#4285F4; font-weight: bold;">o</span>
+      <span style="color:#FBBC05; font-weight: bold;">G</span>
+      <span style="color:#34A853; font-weight: bold;">a</span>
+      <span style="color:#EA4335; font-weight: bold;">g</span>
+      <span style="color:#4285F4; font-weight: bold;">o</span>
+    </h1>
+
+    <p class="subtitle">"Just Google it, genius."</p>
+
+    <div class="input-section">
+      <input type="text" id="query" placeholder="Type your question here..." />
+      <button onclick="startSearch(document.getElementById('query').value)">Search</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <div class="shareable-link" id="shareable"></div>
+    <button id="copy-btn" style="display:none;" onclick="copyLink()">📋 Share this link to the Genius!</button>
+
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
