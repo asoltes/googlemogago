@@ -28,7 +28,7 @@ Because:
 
 ## 🔗 Share a Genius Moment
 
-Every search creates a **shareable link** like: https://yourdomain.com?q=how%20to%20open%20a%20pdf
+Every search creates a **shareable link** like: https://googlemogago.com?q=how%20to%20open%20a%20pdf
 
 
 Send that to your "genius" friend and let them enjoy the animation (with some gentle digital shame).
