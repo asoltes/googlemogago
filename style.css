@@ -4,18 +4,20 @@ body {
   color: #222;
   text-align: center;
   margin: 0;
-  padding: 40px;
+  padding: 40px 20px;
   transition: background 0.3s, color 0.3s;
 }
 
 .container {
   max-width: 700px;
   margin: auto;
+  position: relative;
 }
 
-.logo {
+.googlemogago-logo {
   font-size: 2.5rem;
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 .subtitle {
@@ -29,7 +31,8 @@ body {
 }
 
 input[type="text"] {
-  width: 70%;
+  width: 100%;
+  max-width: 500px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -83,7 +86,8 @@ button:hover {
 .shareable-link {
   margin-top: 20px;
   font-size: 14px;
-  word-break: break-all;
+  word-break: break-word;
+  padding: 0 10px;
 }
 
 .shareable-link a {
@@ -112,4 +116,35 @@ button:hover {
   right: 20px;
   background-color: #007bff;
   color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* 🎯 MOBILE FRIENDLY */
+@media screen and (max-width: 600px) {
+  .googlemogago-logo {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button,
+  .copy-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  .dark-toggle {
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }
